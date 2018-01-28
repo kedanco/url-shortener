@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1
+        URL Table
+    ul
+        each user, i in userlist
+            li
+                p=user.username
+                p=user.email

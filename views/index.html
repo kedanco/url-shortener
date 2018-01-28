@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Url Shortener</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>URL Shortener</h1>
+
+    <form method="post" action="shorten">
+      
+      <input type="text" name="url[url]">
+      <input type="submit" name="submit" value="submit">
+
+    </form>
+
+    <ul>
+      <% urllist.forEach(function(item) { %> 
+        <li> Original: <%= item.original %>, Short: <%= item.shorturl %> </li>
+      <% }); %>
+
+    </ul>
+  
+  </div>
+
+</body>
+</html>
+
+
+
+
+
